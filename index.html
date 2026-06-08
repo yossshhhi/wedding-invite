@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Y&S — Wedding Invitation</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="css/style.css?v=18" rel="stylesheet"/>
+<link href="css/style.css?v=18" rel="stylesheet"/>
+</head>
+<body>
+<div class="intro" id="intro">
+  <div class="intro__wash intro__wash--one"></div>
+  <div class="intro__wash intro__wash--two"></div>
+  <img alt="" class="intro__leaf intro__leaf--top" src="assets/images/decor/intro-leaf-left.png"/>
+  <img alt="" class="intro__leaf intro__leaf--bottom" src="assets/images/decor/intro-leaf-right.png"/>
+
+  <nav aria-label="Intro languages" class="introLangs">
+    <button class="lang introLang active" data-lang="ru" type="button">RU</button>
+    <button class="lang introLang" data-lang="ko" type="button">KO</button>
+    <button class="lang introLang" data-lang="ja" type="button">JA</button>
+  </nav>
+
+  <button aria-label="Открыть приглашение" class="introEnvelope" id="openInvite" type="button">
+    <div class="envelope" aria-hidden="true">
+      <div class="envelope__shadow"></div>
+      <div class="envelope__openBack"></div>
+      <div class="envelope__letter">
+        <div class="envelope__letterInitials">Y&amp;S</div>
+        <div class="envelope__letterBranch">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="envelope__body"></div>
+      <div class="envelope__side envelope__side--left"></div>
+      <div class="envelope__side envelope__side--right"></div>
+      <div class="envelope__bottom"></div>
+      <div class="envelope__flap"></div>
+      <img alt="" aria-hidden="true" class="envelope__sealImage" src="assets/images/decor/intro-shell-ribbon.png"/>
+    </div>
+    <div class="introEnvelope__text">
+      <p data-i18n="names">Екатерина &amp; Сынтек</p>
+      <span data-i18n="open">Открыть приглашение</span>
+      <em>⌄</em>
+    </div>
+  </button>
+</div>
+<header class="topbar">
+<div class="brand">Y / S</div>
+<nav class="langs">
+<button class="lang active" data-lang="ru">RU</button>
+<button class="lang" data-lang="ko">KO</button>
+<button class="lang" data-lang="ja">JA</button>
+</nav>
+<button aria-label="music" class="music" id="musicToggle">♪</button>
+</header>
+<main>
+<section class="section hero">
+<img alt="" class="leaf leaf--left sway" src="assets/images/decor/leaf-left.png"/>
+<img alt="" class="leaf leaf--right sway slow" src="assets/images/decor/leaf-right.png"/>
+<div class="container hero__grid reveal">
+<div class="hero__text">
+<div aria-hidden="true" class="hero__initials">
+<span>Y</span><em>and</em><span>S</span>
+</div>
+<div class="hero__copy">
+<p class="kicker">Y / S</p>
+<p class="date" data-i18n="date">BALI • 27 AUGUST 2026</p>
+<h1 class="hero__title">
+<span data-i18n="bride">Екатерина</span>
+<span class="groom-line"><em>&amp;</em><span data-i18n="groom">Сынтек</span></span>
+</h1>
+<p class="script" data-i18n="tagline">A love without borders</p>
+</div>
+</div>
+<div class="hero__photo">
+<div class="aqua"></div>
+<img alt="couple" src="assets/images/couple/hero-couple.png"/>
+</div>
+</div>
+</section>
+<section class="section invite">
+<div aria-hidden="true" class="invite__sea"></div>
+<div class="container narrow reveal invite__content">
+<svg aria-hidden="true" class="section-icon rings-icon" viewBox="0 0 120 70"><circle cx="48" cy="38" fill="none" r="22" stroke="currentColor" stroke-width="2"></circle><circle cx="72" cy="38" fill="none" r="22" stroke="currentColor" stroke-width="2"></circle><path d="M42 13l6-8 6 8M66 13l6-8 6 8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg>
+<p class="kicker" data-i18n="inviteKicker">ПРИГЛАШЕНИЕ</p>
+<h2 data-i18n="inviteTitle">Приглашаем вас отправиться вместе с нами в путешествие, пунктом назначения которого станет наша свадьба.</h2>
+<p data-i18n="inviteText">Будем счастливы, если вы проведёте этот день рядом с нами.</p>
+<div class="countdown countdown--circles">
+<div><b id="days">00</b><span data-i18n="days">дней</span></div>
+<div><b id="hours">00</b><span data-i18n="hours">часов</span></div>
+<div><b id="minutes">00</b><span data-i18n="minutes">минут</span></div>
+<div><b id="seconds">00</b><span data-i18n="seconds">секунд</span></div>
+</div>
+</div>
+</section>
+<section class="section program">
+<img alt="" class="leaf leaf--program-l sway" src="assets/images/decor/leaf-left.png"/>
+<img alt="" class="leaf leaf--program-r sway slow" src="assets/images/decor/leaf-right.png"/>
+<div class="paper reveal">
+<span aria-hidden="true" class="paperclip"></span>
+<p class="kicker" data-i18n="programKicker">ПРОГРАММА ДНЯ</p>
+<div class="timeline timeline--icons">
+<article><time>15:00</time><span class="timelineIcon"><img aria-hidden="true" class="program-icon" src="assets/images/decor/icon-program-guests.png" alt=""/></span><div><h3 data-i18n="p1t">Сбор гостей</h3><p data-i18n="p1d">Просим взять с собой хорошее настроение и улыбки.</p></div></article>
+<article><time>16:00</time><span class="timelineIcon"><img aria-hidden="true" class="program-icon" src="assets/images/decor/icon-program-ceremony.png" alt=""/></span><div><h3 data-i18n="p2t">Церемония</h3><p data-i18n="p2d">Мы скажем друг другу «да» на закате у океана.</p></div></article>
+<article><time>17:00</time><span class="timelineIcon"><img aria-hidden="true" class="program-icon" src="assets/images/decor/icon-program-dinner.png" alt=""/></span><div><h3 data-i18n="p3t">Ужин и тосты</h3><p data-i18n="p3d">Время вкусной еды, искренних тостов и танцев.</p></div></article>
+<article><time>20:00</time><span class="timelineIcon"><img aria-hidden="true" class="program-icon" src="assets/images/decor/icon-program-party.png" alt=""/></span><div><h3 data-i18n="p4t">Вечеринка</h3><p data-i18n="p4d">Танцуем под звёздами и празднуем любовь.</p></div></article>
+<article><time>22:00</time><span class="timelineIcon"><img aria-hidden="true" class="program-icon" src="assets/images/decor/icon-program-finish.png" alt=""/></span><div><h3 data-i18n="p5t">Завершение вечера</h3><p data-i18n="p5d">Спасибо, что будете с нами в этот день!</p></div></article>
+</div>
+</div>
+</section>
+<section class="section location">
+<div class="container reveal">
+<svg aria-hidden="true" class="section-icon location-pin" viewBox="0 0 80 96"><path d="M40 88S14 54 14 31C14 16.6 25.6 5 40 5s26 11.6 26 26C66 54 40 88 40 88z" fill="none" stroke="currentColor" stroke-width="3"></path><circle cx="40" cy="31" fill="none" r="9" stroke="currentColor" stroke-width="3"></circle></svg>
+<p class="kicker" data-i18n="locationKicker">ЛОКАЦИЯ</p>
+<h2 class="location__title" data-i18n="locationTitle">Вилла на побережье Бали</h2>
+<p class="coords">8° 34’ 20.3” S • 115° 04’ 54.5” E</p>
+<div class="scene">
+<img alt="Вилла на побережье Бали" class="villa" src="assets/images/decor/location-villa.png"/>
+<p class="address" data-i18n="address">The Cove Bali, Banjar Bonian,<br/>Antap,<br/>Bali 82162, Indonesia</p>
+</div>
+<button class="btn btn--light map-toggle" data-i18n="map" id="mapToggle" type="button">Открыть карту</button>
+<div class="map-frame" id="mapFrame">
+<iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.8761270487266!2d114.97365517603212!3d-8.511406591530692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2330c7f3a7287%3A0x825de112705a8f63!2sThe%20Cove%20Bali!5e0!3m2!1sru!2sbg!4v1780674256745!5m2!1sru!2sbg" style="border:0;" width="600"></iframe>
+</div>
+</div>
+</section>
+<section class="section dress">
+<div class="container reveal">
+<svg aria-hidden="true" class="section-icon shell-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 100 100"><path d="M50 92C46 84 35 77 26 64 14 48 13 31 28 18c7-6 15-8 22-8s15 2 22 8c15 13 14 30 2 46-9 13-20 20-24 28Z"></path><path d="M50 92V10M50 92C47 64 42 39 34 15M50 92C53 64 58 39 66 15M50 92C42 64 30 42 18 22M50 92C58 64 70 42 82 22"></path></svg>
+<p class="kicker" data-i18n="dressKicker">ДРЕСС-КОД</p>
+<h2 data-i18n="dressTitle">Легкость и элегантность</h2>
+<p data-i18n="dressText">Будем рады, если вы поддержите атмосферу дня в своих образах.</p>
+<img alt="" class="dressImg" src="assets/images/decor/dress-code.png"/>
+<div class="palette palette--brush"><i style="--c:#3D2817"></i><i style="--c:#5C3A21"></i><i style="--c:#8B6F47"></i><i style="--c:#C4A584"></i><i style="--c:#D8C09F"></i><i style="--c:#BACBB1"></i><i style="--c:#5D6E3F"></i><i style="--c:#E4D775"></i></div>
+</div>
+</section>
+<section class="section details">
+<div class="container reveal">
+<svg aria-hidden="true" class="section-icon palm-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.7" viewBox="0 0 100 100"><path d="M50 90Q50 45 25 18M50 90Q50 45 75 18"></path><path d="M50 75Q31 55 15 48M50 61Q29 43 10 39M50 75Q69 55 85 48M50 61Q71 43 90 39"></path></svg>
+<p class="kicker" data-i18n="detailsKicker">ДЕТАЛИ</p>
+<div class="details__grid">
+<article class="card detailsCard"><img aria-hidden="true" class="card-svg" src="assets/images/decor/icon-wishes.png" alt=""/><h2 data-i18n="wishes">Пожелания</h2><p data-i18n="wishesText">Если вы планировали подарок, мы будем благодарны за любую форму внимания.</p></article>
+<img alt="" class="detailsCouple" src="assets/images/couple/details-couple.png"/>
+<article class="card detailsCard"><img aria-hidden="true" class="card-svg" src="assets/images/decor/icon-transfer.png" alt=""/><h2 data-i18n="transfer">Трансфер</h2><p data-i18n="transferText">Для вас будет организован трансфер к месту проведения свадьбы и обратно.</p><p class="muted" data-i18n="transferNote">Время и место сбора сообщим дополнительно.</p></article>
+</div>
+<p class="detailsNote" data-i18n="detailsNote">Мы с трепетом готовимся к этому дню — каждая деталь важна для нас.</p>
+</div>
+</section>
+<section class="section gallery">
+<div class="container reveal">
+<p class="kicker" data-i18n="galleryKicker">КАДРЫ МЫ ВДВОЕМ</p>
+<h2 data-i18n="galleryTitle">Несколько мгновений на пути к 27 августа</h2>
+<div aria-label="Маршрут" class="cities-watercolor-map">
+<div class="map-city-label label-astana" data-i18n="astana">АСТАНА</div>
+<div class="map-city-label label-daegu" data-i18n="daegu">ТЭГУ</div>
+<div class="map-city-label label-osaka" data-i18n="osaka">ОСАКА</div>
+<svg aria-hidden="true" class="map-line-svg" fill="none" stroke="#c8b2a0" stroke-linecap="round" stroke-width="1.5" viewBox="0 0 900 120">
+<circle cx="160" cy="40" fill="#BACBB1" fill-opacity="0.3" filter="blur(5px)" r="25"></circle>
+<circle cx="450" cy="80" fill="#D4E2E6" fill-opacity="0.35" filter="blur(6px)" r="30"></circle>
+<circle cx="740" cy="40" fill="#BACBB1" fill-opacity="0.3" filter="blur(5px)" r="25"></circle>
+<path d="M 160 40 Q 350 110 450 80 Q 550 50 740 40" id="galleryRoutePath" stroke-dasharray="4 6"></path>
+<circle cx="160" cy="40" fill="#928a80" r="3.5"></circle>
+<circle cx="450" cy="80" fill="#928a80" r="3.5"></circle>
+<circle cx="740" cy="40" fill="#928a80" r="3.5"></circle>
+<g class="galleryShipMotion">
+<animateMotion calcMode="linear" dur="16s" keyPoints="0;1;0" keyTimes="0;0.5;1" path="M 160 40 Q 350 110 450 80 Q 550 50 740 40" repeatCount="indefinite" rotate="auto">
+<mpath href="#galleryRoutePath" xlink:href="#galleryRoutePath"></mpath>
+</animateMotion>
+<image height="164" href="assets/images/decor/ship.png" width="164" x="-72" y="-120"></image>
+</g>
+</svg>
+</div>
+<div aria-label="Фотогалерея" class="galleryCarousel">
+<div class="galleryStage">
+<div class="galleryGrid galleryTrack">
+<figure><img alt="" src="assets/images/gallery/photo-1.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-2.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-3.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-4.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-5.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-6.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-7.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-8.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-9.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-10.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-11.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-12.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-13.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-14.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-15.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-16.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-17.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-18.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-19.jpg"/></figure>
+<figure><img alt="" src="assets/images/gallery/photo-20.jpg"/></figure>
+<!-- Добавляйте новые фото сюда по тому же шаблону:
+                   <figure><img src="assets/images/gallery/photo-3.jpg" alt=""></figure>
+                   Для кадрирования см. блок .gallery figure:nth-child(...) в css/style.css. -->
+</div>
+</div>
+</div>
+<p class="script" data-i18n="galleryFooter">любовь не знает границ — ни океанов, ни языков, ни алфавитов</p>
+</div>
+</section>
+<section class="section rsvp">
+<div class="container rsvp__grid reveal">
+<div class="rsvpText">
+<p class="kicker" data-i18n="rsvpKicker">АНКЕТА</p>
+<h2 data-i18n="rsvpTitle">Анкета гостя</h2>
+<p data-i18n="rsvpText">Пожалуйста, ответьте на несколько вопросов — это поможет нам сделать праздник комфортным для вас.</p>
+<p data-i18n="deadline">Просим подтвердить своё присутствие до 15.08.2026.</p>
+<button class="btn btn--light" data-i18n="rsvpButton" id="openRsvp">Подтвердить участие</button>
+</div>
+<div class="rsvpArt">
+<div aria-hidden="true" class="miniCalendar">
+<div class="calHeader" data-i18n="calendarHeader">Август 2026</div>
+<div class="calGrid">
+<b data-i18n="mon">Пн</b><b data-i18n="tue">Вт</b><b data-i18n="wed">Ср</b><b data-i18n="thu">Чт</b><b data-i18n="fri">Пт</b><b data-i18n="sat">Сб</b><b data-i18n="sun">Вс</b>
+<span></span><span></span><span></span><span></span><span></span><span>1</span><span>2</span>
+<span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+<span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span>
+<span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span>
+<span>24</span><span>25</span><span>26</span><span class="special">27</span><span>28</span><span>29</span><span>30</span>
+<span>31</span>
+</div>
+</div>
+<img alt="" class="rsvpCouple" src="assets/images/couple/rsvp-couple.png"/>
+</div>
+</div>
+</section>
+<section class="section final">
+<img alt="" class="leaf finalLeaf finalLeaf--left sway" src="assets/images/decor/leaf-left.png"/>
+<img alt="" class="leaf finalLeaf finalLeaf--right sway slow" src="assets/images/decor/leaf-right.png"/>
+<div class="container narrow reveal">
+<p class="poetic-text" data-i18n="final1">Среди океана, солнца и ветра мы будем праздновать день, который для нас очень важен.</p>
+<p class="travel-hint" data-i18n="final2">И будем рады, если вы будете рядом.</p>
+
+<div class="finalSignature">
+<strong class="finalSignature__initials"><span>Y</span><span>&amp;</span><span>S</span></strong>
+<div class="finalSignature__text">
+<p data-i18n="signature1">с любовью,</p>
+<p data-i18n="signature2">Екатерина</p>
+<p data-i18n="signature3">&amp; Сынтек</p>
+</div>
+</div>
+
+</div>
+</section>
+</main>
+<div class="modal" id="modal">
+<div class="modal__bg" data-close=""></div>
+<div class="modal__card">
+<button class="modal__close" data-close="">×</button>
+<h2 data-i18n="formTitle">Анкета гостя</h2>
+<p class="modalSub" data-i18n="formSub">Пожалуйста, заполните форму до 15 августа 2026</p>
+<form id="rsvpForm">
+<input id="formLang" name="language" type="hidden" value="ru"/>
+<div class="formGrid">
+<label><span data-i18n="fullName">Имя и фамилия</span><input data-i18n-placeholder="fullNameExample" name="fullName" placeholder="Иван Иванов" required=""/></label>
+<label><span data-i18n="fullNameLatin">Name and surname (in latin)</span><input data-i18n-placeholder="latinFNExample" name="fullNameLatin" placeholder="Ivan Ivanov"/></label>
+</div>
+<fieldset>
+<legend data-i18n="presence">Ваше присутствие</legend>
+<div class="choices">
+<label><input name="presence" required="" type="radio" value="come"/><span data-i18n="come">Я с удовольствием приду</span></label>
+<label><input name="presence" type="radio" value="partner"/><span data-i18n="partner">Буду со своей парой</span></label>
+<label><input name="presence" type="radio" value="cant"/><span data-i18n="cant">К сожалению, не смогу</span></label>
+<label><input name="presence" type="radio" value="later"/><span data-i18n="later">Сообщу позже</span></label>
+</div>
+</fieldset>
+<div class="formGrid">
+<label><span data-i18n="email">E-mail</span><input data-i18n-placeholder="emailExample" name="email" placeholder="example@mail.com" type="email"/></label>
+<label><span data-i18n="phone">Номер телефона</span><input data-i18n-placeholder="phoneExample" name="phone" placeholder="+7 (___) ___-__-__" type="tel"/></label>
+</div>
+<fieldset>
+<legend data-i18n="food">Пищевые предпочтения и аллергии</legend>
+<div class="checks">
+<label><input name="food" type="checkbox" value="gluten"/><span data-i18n="gluten">Глютен</span></label>
+<label><input name="food" type="checkbox" value="lactose"/><span data-i18n="lactose">Лактоза</span></label>
+<label><input name="food" type="checkbox" value="vegetarian"/><span data-i18n="vegetarian">Вегетарианец</span></label>
+<label><input name="food" type="checkbox" value="vegan"/><span data-i18n="vegan">Веган</span></label>
+<label><input name="food" type="checkbox" value="nuts"/><span data-i18n="nuts">Орехи</span></label>
+<label><input name="food" type="checkbox" value="seafood"/><span data-i18n="seafood">Морепродукты</span></label>
+</div>
+</fieldset>
+<label class="label--no-title"><input data-i18n-placeholder="restrictions" name="restrictions" placeholder="Укажите здесь..."/></label>
+<label><span data-i18n="comment">Ваши пожелания или другие детали</span><textarea data-i18n-placeholder="commentPlaceholder" name="comment" placeholder="Любая информация..." rows="3"></textarea></label>
+<button class="btn btn--dark submit" data-i18n="submit" id="submitBtn" type="submit">Отправить ответ</button>
+<p class="status" id="formStatus"></p>
+</form>
+</div>
+</div>
+<audio id="audio" loop="" preload="none"></audio>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
