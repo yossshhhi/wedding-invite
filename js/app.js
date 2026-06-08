@@ -46,7 +46,8 @@ function applyMusicStartTime(audio, lang = currentLang) {
     audio.currentTime = startAt;
   }
 }
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxmO-c95CrZywLrIPhL4UmMPcmJwFQ8hVEV2TLDx9uvCI1p8x76JhCVBo3ggrXMJTlfmA/exec"; // сюда вставить URL Google Apps Script
+
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxlosjqzt23rT8RWM0ZmAADPXVVyAwpgFh9iG7_ABNw1I5qkTM5WwzNxaKn-IyFzg-6iw/exec"; // сюда вставить URL Google Apps Script
 
 document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("inviteLang");

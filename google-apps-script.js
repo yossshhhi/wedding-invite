@@ -1,4 +1,4 @@
-const SHEET_NAME = "Данные гостей";
+const SHEET_NAME = "RSVP";
 
 function doPost(e) {
   try {
