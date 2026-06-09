@@ -7,6 +7,7 @@
   <title>Y&S — Wedding Invitation</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet"/>
 <link href="css/style.css?v=18" rel="stylesheet"/>
 <link href="css/style.css?v=18" rel="stylesheet"/>
 </head>
@@ -19,8 +20,8 @@
 
   <nav aria-label="Intro languages" class="introLangs">
     <button class="lang introLang active" data-lang="ru" type="button">RU</button>
-    <button class="lang introLang" data-lang="ko" type="button">KO</button>
-    <button class="lang introLang" data-lang="ja" type="button">JA</button>
+    <button class="lang introLang" data-lang="ko" type="button">KR</button>
+    <button class="lang introLang" data-lang="ja" type="button">JP</button>
   </nav>
 
   <button aria-label="Открыть приглашение" class="introEnvelope" id="openInvite" type="button">
@@ -51,8 +52,8 @@
 <div class="brand">Y / S</div>
 <nav class="langs">
 <button class="lang active" data-lang="ru">RU</button>
-<button class="lang" data-lang="ko">KO</button>
-<button class="lang" data-lang="ja">JA</button>
+<button class="lang" data-lang="ko">KR</button>
+<button class="lang" data-lang="ja">JP</button>
 </nav>
 <button aria-label="music" class="music" id="musicToggle">♪</button>
 </header>
@@ -84,7 +85,7 @@
 <section class="section invite">
 <div aria-hidden="true" class="invite__sea"></div>
 <div class="container narrow reveal invite__content">
-<svg aria-hidden="true" class="section-icon rings-icon" viewBox="0 0 120 70"><circle cx="48" cy="38" fill="none" r="22" stroke="currentColor" stroke-width="2"></circle><circle cx="72" cy="38" fill="none" r="22" stroke="currentColor" stroke-width="2"></circle><path d="M42 13l6-8 6 8M66 13l6-8 6 8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg>
+<img aria-hidden="true" alt="" class="section-icon section-icon--image section-icon--invite" src="assets/images/decor/icon-invite.png"/>
 <p class="kicker" data-i18n="inviteKicker">ПРИГЛАШЕНИЕ</p>
 <h2 data-i18n="inviteTitle">Приглашаем вас отправиться вместе с нами в путешествие, пунктом назначения которого станет наша свадьба.</h2>
 <p data-i18n="inviteText">Будем счастливы, если вы проведёте этот день рядом с нами.</p>
@@ -129,7 +130,7 @@
 </section>
 <section class="section dress">
 <div class="container reveal">
-<svg aria-hidden="true" class="section-icon shell-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 100 100"><path d="M50 92C46 84 35 77 26 64 14 48 13 31 28 18c7-6 15-8 22-8s15 2 22 8c15 13 14 30 2 46-9 13-20 20-24 28Z"></path><path d="M50 92V10M50 92C47 64 42 39 34 15M50 92C53 64 58 39 66 15M50 92C42 64 30 42 18 22M50 92C58 64 70 42 82 22"></path></svg>
+<img aria-hidden="true" alt="" class="section-icon section-icon--image section-icon--dress" data-lang-src data-src-ja="assets/images/decor/icon-dress-code.png" data-src-ko="assets/images/decor/icon-dress-code-kor.png" data-src-ru="assets/images/decor/icon-dress-code.png" src="assets/images/decor/icon-dress-code.png"/>
 <p class="kicker" data-i18n="dressKicker">ДРЕСС-КОД</p>
 <h2 data-i18n="dressTitle">Легкость и элегантность</h2>
 <p data-i18n="dressText">Будем рады, если вы поддержите атмосферу дня в своих образах.</p>
@@ -139,7 +140,7 @@
 </section>
 <section class="section details">
 <div class="container reveal">
-<svg aria-hidden="true" class="section-icon palm-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.7" viewBox="0 0 100 100"><path d="M50 90Q50 45 25 18M50 90Q50 45 75 18"></path><path d="M50 75Q31 55 15 48M50 61Q29 43 10 39M50 75Q69 55 85 48M50 61Q71 43 90 39"></path></svg>
+<img aria-hidden="true" alt="" class="section-icon section-icon--image section-icon--details" src="assets/images/decor/icon-details.png"/>
 <p class="kicker" data-i18n="detailsKicker">ДЕТАЛИ</p>
 <div class="details__grid">
 <article class="card detailsCard"><img aria-hidden="true" class="card-svg" src="assets/images/decor/icon-wishes.png" alt=""/><h2 data-i18n="wishes">Пожелания</h2><p data-i18n="wishesText">Если вы планировали подарок, мы будем благодарны за любую форму внимания.</p></article>
@@ -196,9 +197,6 @@
 <figure><img alt="" src="assets/images/gallery/photo-18.jpg"/></figure>
 <figure><img alt="" src="assets/images/gallery/photo-19.jpg"/></figure>
 <figure><img alt="" src="assets/images/gallery/photo-20.jpg"/></figure>
-<!-- Добавляйте новые фото сюда по тому же шаблону:
-                   <figure><img src="assets/images/gallery/photo-3.jpg" alt=""></figure>
-                   Для кадрирования см. блок .gallery figure:nth-child(...) в css/style.css. -->
 </div>
 </div>
 </div>
@@ -227,7 +225,7 @@
 <span>31</span>
 </div>
 </div>
-<img alt="" class="rsvpCouple" src="assets/images/couple/rsvp-couple.png"/>
+<img alt="" class="rsvpCouple" src="assets/images/couple/rsvp-couple.webp"/>
 </div>
 </div>
 </section>

@@ -49,6 +49,26 @@ function applyMusicStartTime(audio, lang = currentLang) {
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxlosjqzt23rT8RWM0ZmAADPXVVyAwpgFh9iG7_ABNw1I5qkTM5WwzNxaKn-IyFzg-6iw/exec"; // сюда вставить URL Google Apps Script
 
+async function submitRsvpForm(data) {
+  const response = await fetch(GOOGLE_SCRIPT_URL, {
+    method: "POST",
+    headers: {
+      "Accept": "application/json",
+      "Content-Type": "text/plain;charset=utf-8"
+    },
+    body: JSON.stringify(data)
+  });
+
+  if (!response.ok) {
+    throw new Error(`RSVP request failed with HTTP ${response.status}`);
+  }
+
+  const result = await response.json();
+  if (!result || result.status !== "ok") {
+    throw new Error(result?.message || "RSVP was not saved");
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("inviteLang");
   applyTranslations(savedLang || "ru");
@@ -283,12 +303,7 @@ function initForm() {
 
     try {
       if (GOOGLE_SCRIPT_URL) {
-        await fetch(GOOGLE_SCRIPT_URL, {
-          method: "POST",
-          mode: "no-cors",
-          headers: { "Content-Type": "text/plain;charset=utf-8" },
-          body: JSON.stringify(data)
-        });
+        await submitRsvpForm(data);
       } else {
         console.log("FORM DATA", data);
         await new Promise((resolve) => setTimeout(resolve, 700));
