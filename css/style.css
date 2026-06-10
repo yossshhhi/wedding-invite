@@ -9449,3 +9449,538 @@ html[lang="ja"] .finalSignature__text p[data-i18n="signature3"] {
   letter-spacing: 0 !important;
   word-break: keep-all !important;
 }
+
+/* ===== Russian dress text manual line break ===== */
+html[lang="ru"] .dress p[data-i18n="dressText"] {
+  display: block !important;
+  width: max-content !important;
+  max-width: calc(100vw - 24px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  white-space: pre !important;
+  overflow-wrap: normal !important;
+  word-break: keep-all !important;
+  text-align: center !important;
+  letter-spacing: 0 !important;
+  font-size: clamp(15px, 1.35vw, 18px) !important;
+  line-height: 1.62 !important;
+}
+
+@media (max-width: 768px) {
+  html[lang="ru"] .dress p[data-i18n="dressText"] {
+    max-width: calc(100vw - 18px) !important;
+    font-size: clamp(9.2px, 2.55vw, 12px) !important;
+    line-height: 1.5 !important;
+  }
+}
+
+@media (max-width: 390px) {
+  html[lang="ru"] .dress p[data-i18n="dressText"] {
+    max-width: calc(100vw - 12px) !important;
+    font-size: clamp(8.6px, 2.36vw, 9.2px) !important;
+  }
+}
+
+@media (max-width: 340px) {
+  html[lang="ru"] .dress p[data-i18n="dressText"] {
+    max-width: calc(100vw - 8px) !important;
+    font-size: 8px !important;
+  }
+}
+
+/* ===== Final text -10% all languages ===== */
+.final p[data-i18n="final1"],
+section.final p[data-i18n="final1"],
+.final .poetic-text[data-i18n="final1"],
+section.final .poetic-text[data-i18n="final1"] {
+  font-size: clamp(19.8px, 2.385vw, 27.9px) !important;
+}
+
+.final p[data-i18n="final2"],
+section.final p[data-i18n="final2"],
+.final .travel-hint[data-i18n="final2"],
+section.final .travel-hint[data-i18n="final2"] {
+  font-size: clamp(22.281px, 2.0604vw, 25.8746px) !important;
+}
+
+@media (max-width: 768px) {
+  .final p[data-i18n="final1"],
+  section.final p[data-i18n="final1"],
+  .final .poetic-text[data-i18n="final1"],
+  section.final .poetic-text[data-i18n="final1"] {
+    font-size: clamp(15.75px, 4.41vw, 19.8px) !important;
+  }
+
+  .final p[data-i18n="final2"],
+  section.final p[data-i18n="final2"],
+  .final .travel-hint[data-i18n="final2"],
+  section.final .travel-hint[data-i18n="final2"] {
+    font-size: clamp(12.4582px, 3.0666vw, 15.2133px) !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .final p[data-i18n="final2"],
+  section.final p[data-i18n="final2"],
+  .final .travel-hint[data-i18n="final2"],
+  section.final .travel-hint[data-i18n="final2"] {
+    font-size: clamp(11.6196px, 2.875vw, 12.8175px) !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .final p[data-i18n="final1"],
+  section.final p[data-i18n="final1"],
+  .final .poetic-text[data-i18n="final1"],
+  section.final .poetic-text[data-i18n="final1"] {
+    font-size: clamp(14.85px, 4.32vw, 18px) !important;
+  }
+
+  .final p[data-i18n="final2"],
+  section.final p[data-i18n="final2"],
+  .final .travel-hint[data-i18n="final2"],
+  section.final .travel-hint[data-i18n="final2"] {
+    font-size: clamp(10.9009px, 2.7791vw, 11.979px) !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .final p[data-i18n="final2"],
+  section.final p[data-i18n="final2"],
+  .final .travel-hint[data-i18n="final2"],
+  section.final .travel-hint[data-i18n="final2"] {
+    font-size: clamp(9px, 2.43vw, 9.9px) !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .final p[data-i18n="final2"],
+  section.final p[data-i18n="final2"],
+  .final .travel-hint[data-i18n="final2"],
+  section.final .travel-hint[data-i18n="final2"] {
+    font-size: clamp(8.28px, 2.322vw, 9px) !important;
+  }
+}
+
+/* ===== Final1 only -20% ===== */
+.final p[data-i18n="final1"],
+section.final p[data-i18n="final1"],
+.final .poetic-text[data-i18n="final1"],
+section.final .poetic-text[data-i18n="final1"] {
+  font-size: clamp(15.84px, 1.908vw, 22.32px) !important;
+}
+
+@media (max-width: 768px) {
+  .final p[data-i18n="final1"],
+  section.final p[data-i18n="final1"],
+  .final .poetic-text[data-i18n="final1"],
+  section.final .poetic-text[data-i18n="final1"] {
+    font-size: clamp(12.6px, 3.528vw, 15.84px) !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .final p[data-i18n="final1"],
+  section.final p[data-i18n="final1"],
+  .final .poetic-text[data-i18n="final1"],
+  section.final .poetic-text[data-i18n="final1"] {
+    font-size: clamp(11.88px, 3.456vw, 14.4px) !important;
+  }
+}
+
+/* ===== Final1 and final2 current size -10% ===== */
+.final p[data-i18n="final1"],
+section.final p[data-i18n="final1"],
+.final .poetic-text[data-i18n="final1"],
+section.final .poetic-text[data-i18n="final1"] {
+  font-size: clamp(14.256px, 1.7172vw, 20.088px) !important;
+}
+
+.final p[data-i18n="final2"],
+section.final p[data-i18n="final2"],
+.final .travel-hint[data-i18n="final2"],
+section.final .travel-hint[data-i18n="final2"] {
+  font-size: clamp(20.0529px, 1.8544vw, 23.2871px) !important;
+}
+
+@media (max-width: 768px) {
+  .final p[data-i18n="final1"],
+  section.final p[data-i18n="final1"],
+  .final .poetic-text[data-i18n="final1"],
+  section.final .poetic-text[data-i18n="final1"] {
+    font-size: clamp(11.34px, 3.1752vw, 14.256px) !important;
+  }
+
+  .final p[data-i18n="final2"],
+  section.final p[data-i18n="final2"],
+  .final .travel-hint[data-i18n="final2"],
+  section.final .travel-hint[data-i18n="final2"] {
+    font-size: clamp(11.2124px, 2.7599vw, 13.692px) !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .final p[data-i18n="final2"],
+  section.final p[data-i18n="final2"],
+  .final .travel-hint[data-i18n="final2"],
+  section.final .travel-hint[data-i18n="final2"] {
+    font-size: clamp(10.4576px, 2.5875vw, 11.5358px) !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .final p[data-i18n="final1"],
+  section.final p[data-i18n="final1"],
+  .final .poetic-text[data-i18n="final1"],
+  section.final .poetic-text[data-i18n="final1"] {
+    font-size: clamp(10.692px, 3.1104vw, 12.96px) !important;
+  }
+
+  .final p[data-i18n="final2"],
+  section.final p[data-i18n="final2"],
+  .final .travel-hint[data-i18n="final2"],
+  section.final .travel-hint[data-i18n="final2"] {
+    font-size: clamp(9.8108px, 2.5012vw, 10.7811px) !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .final p[data-i18n="final2"],
+  section.final p[data-i18n="final2"],
+  .final .travel-hint[data-i18n="final2"],
+  section.final .travel-hint[data-i18n="final2"] {
+    font-size: clamp(8.1px, 2.187vw, 8.91px) !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .final p[data-i18n="final2"],
+  section.final p[data-i18n="final2"],
+  .final .travel-hint[data-i18n="final2"],
+  section.final .travel-hint[data-i18n="final2"] {
+    font-size: clamp(7.452px, 2.0898vw, 8.1px) !important;
+  }
+}
+
+/* ===== Final initials use hero-style "and" ===== */
+.finalSignature__initials span:nth-child(2) {
+  display: block !important;
+  font-family: 'Marck Script', cursive !important;
+  font-size: .24em !important;
+  line-height: 1 !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  color: rgba(180, 165, 143, .84) !important;
+  margin: .08em 0 .06em !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+/* ===== Russian program and details manual line breaks ===== */
+html[lang="ru"] .timeline p[data-i18n="p1d"],
+html[lang="ru"] .timeline p[data-i18n="p2d"],
+html[lang="ru"] .timeline p[data-i18n="p3d"],
+html[lang="ru"] .timeline p[data-i18n="p4d"],
+html[lang="ru"] .timeline p[data-i18n="p5d"],
+html[lang="ru"] .detailsCard p[data-i18n="wishesText"],
+html[lang="ru"] .detailsCard p[data-i18n="transferText"] {
+  display: block !important;
+  width: max-content !important;
+  max-width: calc(100vw - 24px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  white-space: pre !important;
+  overflow-wrap: normal !important;
+  word-break: keep-all !important;
+  text-align: center !important;
+  letter-spacing: 0 !important;
+}
+
+html[lang="ru"] .timeline p[data-i18n="p1d"],
+html[lang="ru"] .timeline p[data-i18n="p2d"],
+html[lang="ru"] .timeline p[data-i18n="p3d"],
+html[lang="ru"] .timeline p[data-i18n="p4d"],
+html[lang="ru"] .timeline p[data-i18n="p5d"] {
+  font-size: clamp(15px, 1.12vw, 19px) !important;
+  line-height: 1.28 !important;
+}
+
+html[lang="ru"] .detailsCard p[data-i18n="wishesText"],
+html[lang="ru"] .detailsCard p[data-i18n="transferText"] {
+  font-size: 11.4px !important;
+  line-height: 1.32 !important;
+}
+
+@media (max-width: 768px) {
+  html[lang="ru"] .timeline p[data-i18n="p1d"],
+  html[lang="ru"] .timeline p[data-i18n="p2d"],
+  html[lang="ru"] .timeline p[data-i18n="p3d"],
+  html[lang="ru"] .timeline p[data-i18n="p4d"],
+  html[lang="ru"] .timeline p[data-i18n="p5d"],
+  html[lang="ru"] .detailsCard p[data-i18n="wishesText"],
+  html[lang="ru"] .detailsCard p[data-i18n="transferText"] {
+    max-width: calc(100vw - 18px) !important;
+  }
+
+  html[lang="ru"] .timeline p[data-i18n="p1d"],
+  html[lang="ru"] .timeline p[data-i18n="p2d"],
+  html[lang="ru"] .timeline p[data-i18n="p3d"],
+  html[lang="ru"] .timeline p[data-i18n="p4d"],
+  html[lang="ru"] .timeline p[data-i18n="p5d"] {
+    font-size: clamp(10.8px, 3.2vw, 13px) !important;
+    line-height: 1.3 !important;
+  }
+}
+
+@media (max-width: 390px) {
+  html[lang="ru"] .timeline p[data-i18n="p1d"],
+  html[lang="ru"] .timeline p[data-i18n="p2d"],
+  html[lang="ru"] .timeline p[data-i18n="p3d"],
+  html[lang="ru"] .timeline p[data-i18n="p4d"],
+  html[lang="ru"] .timeline p[data-i18n="p5d"],
+  html[lang="ru"] .detailsCard p[data-i18n="wishesText"],
+  html[lang="ru"] .detailsCard p[data-i18n="transferText"] {
+    max-width: calc(100vw - 12px) !important;
+  }
+
+  html[lang="ru"] .timeline p[data-i18n="p1d"],
+  html[lang="ru"] .timeline p[data-i18n="p2d"],
+  html[lang="ru"] .timeline p[data-i18n="p3d"],
+  html[lang="ru"] .timeline p[data-i18n="p4d"],
+  html[lang="ru"] .timeline p[data-i18n="p5d"] {
+    font-size: 10.6px !important;
+  }
+
+  html[lang="ru"] .detailsCard p[data-i18n="transferText"] {
+    font-size: 10.8px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  html[lang="ru"] .timeline p[data-i18n="p1d"],
+  html[lang="ru"] .timeline p[data-i18n="p2d"],
+  html[lang="ru"] .timeline p[data-i18n="p3d"],
+  html[lang="ru"] .timeline p[data-i18n="p4d"],
+  html[lang="ru"] .timeline p[data-i18n="p5d"],
+  html[lang="ru"] .detailsCard p[data-i18n="wishesText"],
+  html[lang="ru"] .detailsCard p[data-i18n="transferText"] {
+    max-width: calc(100vw - 8px) !important;
+  }
+
+  html[lang="ru"] .detailsCard p[data-i18n="wishesText"],
+  html[lang="ru"] .detailsCard p[data-i18n="transferText"] {
+    font-size: 10px !important;
+  }
+}
+
+/* ===== Russian program descriptions left aligned ===== */
+html[lang="ru"] .timeline p[data-i18n="p1d"],
+html[lang="ru"] .timeline p[data-i18n="p2d"],
+html[lang="ru"] .timeline p[data-i18n="p3d"],
+html[lang="ru"] .timeline p[data-i18n="p4d"],
+html[lang="ru"] .timeline p[data-i18n="p5d"] {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  text-align: left !important;
+}
+
+/* ===== RSVP heading/deadline centered all languages ===== */
+.rsvpText,
+.rsvpText .kicker[data-i18n="rsvpKicker"],
+.rsvpText h2[data-i18n="rsvpTitle"],
+.rsvpText p[data-i18n="deadline"],
+html[lang="ru"] .rsvpText .kicker[data-i18n="rsvpKicker"],
+html[lang="ru"] .rsvpText h2[data-i18n="rsvpTitle"],
+html[lang="ru"] .rsvpText p[data-i18n="deadline"],
+html[lang="ko"] .rsvpText .kicker[data-i18n="rsvpKicker"],
+html[lang="ko"] .rsvpText h2[data-i18n="rsvpTitle"],
+html[lang="ko"] .rsvpText p[data-i18n="deadline"],
+html[lang="ja"] .rsvpText .kicker[data-i18n="rsvpKicker"],
+html[lang="ja"] .rsvpText h2[data-i18n="rsvpTitle"],
+html[lang="ja"] .rsvpText p[data-i18n="deadline"] {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ===== Section icons closer to kicker ===== */
+.invite .section-icon.section-icon--image.section-icon--invite,
+.dress .section-icon.section-icon--image.section-icon--dress,
+.details .section-icon.section-icon--image.section-icon--details {
+  margin-bottom: 0 !important;
+}
+
+.invite .section-icon.section-icon--image.section-icon--invite + .kicker,
+.dress .section-icon.section-icon--image.section-icon--dress + .kicker,
+.details .section-icon.section-icon--image.section-icon--details + .kicker {
+  margin-top: 0 !important;
+}
+
+/* ===== Invite/dress icons a little closer to kicker ===== */
+.invite .section-icon.section-icon--image.section-icon--invite,
+.dress .section-icon.section-icon--image.section-icon--dress {
+  margin-bottom: -8px !important;
+}
+
+@media (max-width: 768px) {
+  .invite .section-icon.section-icon--image.section-icon--invite,
+  .dress .section-icon.section-icon--image.section-icon--dress {
+    margin-bottom: -6px !important;
+  }
+}
+
+/* ===== Transfer icon closer to transfer title ===== */
+.detailsCard img[src*="icon-transfer"] {
+  margin-top: -8px !important;
+  margin-bottom: -8px !important;
+  transform: translateY(8px) !important;
+}
+
+.detailsCard img[src*="icon-transfer"] + h2[data-i18n="transfer"] {
+  margin-top: 0 !important;
+}
+
+.detailsCard:has(img[src*="icon-transfer"]) {
+  padding-top: 14px !important;
+}
+
+@media (max-width: 768px) {
+  .detailsCard img[src*="icon-transfer"] {
+    margin-top: -6px !important;
+    margin-bottom: -6px !important;
+    transform: translateY(6px) !important;
+  }
+
+  .detailsCard:has(img[src*="icon-transfer"]) {
+    padding-top: 12px !important;
+  }
+}
+
+/* ===== Transfer icon slightly closer ===== */
+.detailsCard img[src*="icon-transfer"] {
+  margin-bottom: -14px !important;
+  transform: translateY(10px) !important;
+}
+
+@media (max-width: 768px) {
+  .detailsCard img[src*="icon-transfer"] {
+    margin-bottom: -11px !important;
+    transform: translateY(8px) !important;
+  }
+}
+
+/* ===== Transfer icon final spacing tweak ===== */
+.detailsCard:has(img[src*="icon-transfer"]) {
+  padding-top: 8px !important;
+}
+
+.detailsCard img[src*="icon-transfer"] {
+  margin-top: -12px !important;
+  margin-bottom: -18px !important;
+  transform: translateY(12px) !important;
+}
+
+@media (max-width: 768px) {
+  .detailsCard:has(img[src*="icon-transfer"]) {
+    padding-top: 8px !important;
+  }
+
+  .detailsCard img[src*="icon-transfer"] {
+    margin-top: -10px !important;
+    margin-bottom: -14px !important;
+    transform: translateY(10px) !important;
+  }
+}
+
+/* ===== Korean typography system ===== */
+html[lang="ko"] body,
+html[lang="ko"] button,
+html[lang="ko"] input,
+html[lang="ko"] textarea,
+html[lang="ko"] select,
+html[lang="ko"] .btn,
+html[lang="ko"] .modal,
+html[lang="ko"] .detailsCard p,
+html[lang="ko"] .timeline p,
+html[lang="ko"] .rsvpText p,
+html[lang="ko"] .invite p:not(.kicker),
+html[lang="ko"] .dress p:not(.kicker) {
+  font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+html[lang="ko"] .kicker[data-i18n],
+html[lang="ko"] .introEnvelope__text span[data-i18n="open"] {
+  font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: .18em !important;
+}
+
+html[lang="ko"] h1,
+html[lang="ko"] h2,
+html[lang="ko"] h3,
+html[lang="ko"] .hero__title,
+html[lang="ko"] .location__title,
+html[lang="ko"] .timeline time,
+html[lang="ko"] .timeline h3,
+html[lang="ko"] .event-title,
+html[lang="ko"] .detailsCard h2,
+html[lang="ko"] .rsvpText h2,
+html[lang="ko"] .gallery h2[data-i18n="galleryTitle"],
+html[lang="ko"] .dress h2[data-i18n="dressTitle"],
+html[lang="ko"] .invite h2[data-i18n="inviteTitle"] {
+  font-family: 'Gowun Batang', 'Apple SD Gothic Neo', serif !important;
+  font-weight: 700 !important;
+}
+
+html[lang="ko"] .introEnvelope__text p[data-i18n="names"] {
+  font-family: 'Gowun Batang', 'Apple SD Gothic Neo', serif !important;
+  font-weight: 700 !important;
+}
+
+html[lang="ko"] .hero__title [data-i18n="bride"],
+html[lang="ko"] .hero__title [data-i18n="groom"],
+html[lang="ko"] .final p[data-i18n="final1"],
+html[lang="ko"] .final .poetic-text[data-i18n="final1"],
+html[lang="ko"] .finalSignature__text p[data-i18n="signature2"],
+html[lang="ko"] .finalSignature__text p[data-i18n="signature3"] {
+  font-family: 'Nanum Pen Script', 'NanumPen', 'Apple SD Gothic Neo', cursive !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+html[lang="ko"] .finalSignature__text .signatureAmp {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-weight: 400 !important;
+}
+
+/* ===== Prevent Korean intro name font swap ===== */
+html[lang="ko"]:not(.ko-intro-font-ready) .introEnvelope__text p[data-i18n="names"] {
+  visibility: hidden !important;
+}
+
+/* ===== Korean final1 +20% ===== */
+html[lang="ko"] .final p[data-i18n="final1"],
+html[lang="ko"] section.final p[data-i18n="final1"],
+html[lang="ko"] .final .poetic-text[data-i18n="final1"],
+html[lang="ko"] section.final .poetic-text[data-i18n="final1"] {
+  font-size: clamp(17.1072px, 2.06064vw, 24.1056px) !important;
+}
+
+@media (max-width: 768px) {
+  html[lang="ko"] .final p[data-i18n="final1"],
+  html[lang="ko"] section.final p[data-i18n="final1"],
+  html[lang="ko"] .final .poetic-text[data-i18n="final1"],
+  html[lang="ko"] section.final .poetic-text[data-i18n="final1"] {
+    font-size: clamp(13.608px, 3.81024vw, 17.1072px) !important;
+  }
+}
+
+@media (max-width: 390px) {
+  html[lang="ko"] .final p[data-i18n="final1"],
+  html[lang="ko"] section.final p[data-i18n="final1"],
+  html[lang="ko"] .final .poetic-text[data-i18n="final1"],
+  html[lang="ko"] section.final .poetic-text[data-i18n="final1"] {
+    font-size: clamp(12.8304px, 3.73248vw, 15.552px) !important;
+  }
+}

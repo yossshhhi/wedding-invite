@@ -17,15 +17,15 @@ const translations = {
 
     programKicker:      "ПРОГРАММА ДНЯ",
     p1t:                "Сбор гостей",
-    p1d:                "Просим взять с собой хорошее настроение и улыбки.",
+    p1d:                "Просим взять с собой хорошее\nнастроение и улыбки.",
     p2t:                "Церемония",
-    p2d:                "Мы скажем друг другу «да» на закате у океана.",
+    p2d:                "Мы скажем друг другу «да» на\nзакате у океана.",
     p3t:                "Ужин и тосты",
-    p3d:                "Время вкусной еды, искренних тостов и танцев.",
+    p3d:                "Время вкусной еды, искренних\nтостов и танцев.",
     p4t:                "Вечеринка",
-    p4d:                "Танцуем под звёздами и празднуем любовь.",
+    p4d:                "Танцуем под звёздами и\nпразднуем любовь.",
     p5t:                "Завершение вечера",
-    p5d:                "Спасибо, что будете с нами в этот день!",
+    p5d:                "Спасибо, что будете с нами\nв этот день!",
 
     locationKicker:     "ЛОКАЦИЯ",
     locationTitle:      "Вилла на побережье Бали",
@@ -43,9 +43,9 @@ const translations = {
     sat:                "Сб",
     sun:                "Вс",
     wishes:             "Пожелания",
-    wishesText:         "Если вы планировали подарок, мы будем благодарны за любую форму внимания.",
+    wishesText:         "Если вы планировали подарок, мы будем\nблагодарны за любую форму внимания.",
     transfer:           "Трансфер",
-    transferText:       "Нам очень важно, чтобы каждый чувствовал себя комфортно, поэтому для вас будет организован трансфер к месту проведения свадьбы и обратно.",
+    transferText:       "Нам очень важно, чтобы каждый чувствовал себя комфортно,\nпоэтому для вас будет организован трансфер\nк месту проведения свадьбы и обратно.",
     transferNote:       "(Время и место сбора сообщим дополнительно).",
     detailsNote:        "Мы с трепетом готовимся к этому дню — каждая деталь важна для нас.",
 
@@ -58,7 +58,7 @@ const translations = {
 
     dressKicker:        "ДРЕСС-КОД",
     dressTitle:         "Легкость и элегантность",
-    dressText:          "Мы очень старались создать красивую атмосферу этого дня и будем рады, если вы поддержите её в своих образах.",
+    dressText:          "Мы очень старались создать красивую атмосферу этого\nдня и будем рады, если вы поддержите её в своих образах.",
 
     rsvpKicker:         "АНКЕТА",
     rsvpTitle:          "Анкета гостя",
@@ -322,10 +322,33 @@ const translations = {
 };
 
 let currentLang = "ru";
+let koreanIntroFontPromise = null;
+
 function t(k) { return translations[currentLang][k] || translations.ru[k] || k; }
+
+function ensureKoreanIntroFontReady() {
+  const root = document.documentElement;
+  if (currentLang !== "ko") {
+    root.classList.add("ko-intro-font-ready");
+    return;
+  }
+
+  root.classList.remove("ko-intro-font-ready");
+  if (!document.fonts?.load) {
+    root.classList.add("ko-intro-font-ready");
+    return;
+  }
+
+  koreanIntroFontPromise ||= document.fonts.load("700 1em 'Gowun Batang'", "예카테리나 & 승택");
+  koreanIntroFontPromise
+    .catch(() => {})
+    .finally(() => root.classList.add("ko-intro-font-ready"));
+}
+
 function applyTranslations(lang) {
   currentLang = translations[lang] ? lang : "ru";
   document.documentElement.lang = currentLang;
+  ensureKoreanIntroFontReady();
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.dataset.i18n;
     const value = t(key);
