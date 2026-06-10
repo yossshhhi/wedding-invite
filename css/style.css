@@ -10240,3 +10240,26 @@ html[lang="ko"] .hero p.script[data-i18n="tagline"] {
     margin-top: 14px !important;
   }
 }
+
+/* ===== Korean final signature names tighter +10% ===== */
+html[lang="ko"] .finalSignature__text p[data-i18n="signature2"],
+html[lang="ko"] .finalSignature__text p[data-i18n="signature3"] {
+  font-size: clamp(52.6205px, 5.6454vw, 79.105px) !important;
+  line-height: .86 !important;
+}
+
+@media (max-width: 768px) {
+  html[lang="ko"] .finalSignature__text p[data-i18n="signature2"],
+  html[lang="ko"] .finalSignature__text p[data-i18n="signature3"] {
+    font-size: clamp(41.4691px, 10.89vw, 56.4538px) !important;
+    line-height: .84 !important;
+  }
+}
+
+@media (max-width: 390px) {
+  html[lang="ko"] .finalSignature__text p[data-i18n="signature2"],
+  html[lang="ko"] .finalSignature__text p[data-i18n="signature3"] {
+    font-size: clamp(35.7192px, 9.7574vw, 47.0448px) !important;
+    line-height: .84 !important;
+  }
+}
