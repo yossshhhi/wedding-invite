@@ -10198,3 +10198,45 @@ html[lang="ko"] .finalSignature__text p[data-i18n="signature3"] {
     margin-top: -.1em !important;
   }
 }
+
+/* ===== Korean hero date/name/tagline rhythm ===== */
+html[lang="ko"] .hero .date {
+  font-family: Inter, system-ui, sans-serif !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+  letter-spacing: .28em !important;
+  text-transform: uppercase !important;
+  margin-top: 28px !important;
+  margin-bottom: 14px !important;
+}
+
+html[lang="ko"] .hero__title {
+  line-height: .84 !important;
+}
+
+html[lang="ko"] .hero__title .groom-line {
+  margin-top: -.14em !important;
+}
+
+html[lang="ko"] .hero p.script[data-i18n="tagline"] {
+  margin-top: 18px !important;
+}
+
+@media (max-width: 768px) {
+  html[lang="ko"] .hero .date {
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+  }
+
+  html[lang="ko"] .hero__title {
+    line-height: .82 !important;
+  }
+
+  html[lang="ko"] .hero__title .groom-line {
+    margin-top: -.16em !important;
+  }
+
+  html[lang="ko"] .hero p.script[data-i18n="tagline"] {
+    margin-top: 14px !important;
+  }
+}
