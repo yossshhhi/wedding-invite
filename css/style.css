@@ -10082,3 +10082,15 @@ html[lang="ko"] .hero p.script[data-i18n="tagline"] {
     font-size: 11px !important;
   }
 }
+
+/* ===== Final script font lock for tagline and hero initials ===== */
+html[lang="ko"] .hero p.script[data-i18n="tagline"],
+html[lang="ja"] .hero p.script[data-i18n="tagline"],
+html[lang="ko"] .hero__initials em,
+html[lang="ja"] .hero__initials em {
+  font-family: 'Marck Script', cursive !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
