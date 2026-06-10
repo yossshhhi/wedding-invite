@@ -10094,3 +10094,107 @@ html[lang="ja"] .hero__initials em {
   letter-spacing: 0 !important;
   text-transform: none !important;
 }
+
+/* ===== Korean hero tighter vertical rhythm ===== */
+html[lang="ko"] .hero .date {
+  margin-top: 18px !important;
+  margin-bottom: 4px !important;
+}
+
+html[lang="ko"] .hero__title {
+  line-height: .9 !important;
+}
+
+html[lang="ko"] .hero p.script[data-i18n="tagline"] {
+  margin-top: 4px !important;
+}
+
+@media (max-width: 768px) {
+  html[lang="ko"] .hero .date {
+    margin-top: 12px !important;
+    margin-bottom: 2px !important;
+  }
+
+  html[lang="ko"] .hero p.script[data-i18n="tagline"] {
+    margin-top: 2px !important;
+  }
+}
+
+/* ===== Korean large headings Gowun Batang upright ===== */
+html[lang="ko"] h1,
+html[lang="ko"] h2,
+html[lang="ko"] h3,
+html[lang="ko"] .hero__title,
+html[lang="ko"] .location__title,
+html[lang="ko"] .timeline time,
+html[lang="ko"] .timeline h3,
+html[lang="ko"] .event-title,
+html[lang="ko"] .detailsCard h2,
+html[lang="ko"] .rsvpText h2,
+html[lang="ko"] .gallery h2[data-i18n="galleryTitle"],
+html[lang="ko"] .dress h2[data-i18n="dressTitle"],
+html[lang="ko"] .invite h2[data-i18n="inviteTitle"] {
+  font-family: 'Gowun Batang', 'Apple SD Gothic Neo', serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+
+/* ===== Korean final selected text +20% ===== */
+html[lang="ko"] .final p[data-i18n="final1"],
+html[lang="ko"] section.final p[data-i18n="final1"],
+html[lang="ko"] .final .poetic-text[data-i18n="final1"],
+html[lang="ko"] section.final .poetic-text[data-i18n="final1"] {
+  font-size: clamp(20.5286px, 2.4728vw, 28.9267px) !important;
+}
+
+html[lang="ko"] .finalSignature__text p[data-i18n="signature2"],
+html[lang="ko"] .finalSignature__text p[data-i18n="signature3"] {
+  font-size: clamp(47.8368px, 5.1322vw, 71.9136px) !important;
+}
+
+@media (max-width: 768px) {
+  html[lang="ko"] .final p[data-i18n="final1"],
+  html[lang="ko"] section.final p[data-i18n="final1"],
+  html[lang="ko"] .final .poetic-text[data-i18n="final1"],
+  html[lang="ko"] section.final .poetic-text[data-i18n="final1"] {
+    font-size: clamp(16.3296px, 4.5723vw, 20.5286px) !important;
+  }
+
+  html[lang="ko"] .finalSignature__text p[data-i18n="signature2"],
+  html[lang="ko"] .finalSignature__text p[data-i18n="signature3"] {
+    font-size: clamp(37.6992px, 9.9vw, 51.3216px) !important;
+  }
+}
+
+@media (max-width: 390px) {
+  html[lang="ko"] .final p[data-i18n="final1"],
+  html[lang="ko"] section.final p[data-i18n="final1"],
+  html[lang="ko"] .final .poetic-text[data-i18n="final1"],
+  html[lang="ko"] section.final .poetic-text[data-i18n="final1"] {
+    font-size: clamp(15.3965px, 4.479vw, 18.6624px) !important;
+  }
+
+  html[lang="ko"] .finalSignature__text p[data-i18n="signature2"],
+  html[lang="ko"] .finalSignature__text p[data-i18n="signature3"] {
+    font-size: clamp(32.472px, 8.8704vw, 42.768px) !important;
+  }
+}
+
+/* ===== Hero names tighter line spacing ===== */
+.hero__title {
+  line-height: .9 !important;
+}
+
+.hero__title .groom-line {
+  margin-top: -.08em !important;
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    line-height: .88 !important;
+  }
+
+  .hero__title .groom-line {
+    margin-top: -.1em !important;
+  }
+}
