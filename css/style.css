@@ -9984,3 +9984,101 @@ html[lang="ko"] section.final .poetic-text[data-i18n="final1"] {
     font-size: clamp(12.8304px, 3.73248vw, 15.552px) !important;
   }
 }
+
+/* ===== Script accents same as Russian for KO/JA ===== */
+html[lang="ko"] .hero p.script[data-i18n="tagline"],
+html[lang="ja"] .hero p.script[data-i18n="tagline"],
+html[lang="ko"] .hero__initials em,
+html[lang="ja"] .hero__initials em,
+html[lang="ko"] .finalSignature__initials span:nth-child(2),
+html[lang="ja"] .finalSignature__initials span:nth-child(2) {
+  font-family: 'Marck Script', cursive !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  color: #153f62 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+html[lang="ko"] .hero__initials em,
+html[lang="ja"] .hero__initials em,
+html[lang="ko"] .finalSignature__initials span:nth-child(2),
+html[lang="ja"] .finalSignature__initials span:nth-child(2) {
+  color: rgba(180, 165, 143, .82) !important;
+}
+
+/* ===== Korean NanumPen names +20% ===== */
+html[lang="ko"] .hero__title [data-i18n="bride"],
+html[lang="ko"] .hero__title [data-i18n="groom"] {
+  font-size: 1.2em !important;
+}
+
+html[lang="ko"] .finalSignature__text p[data-i18n="signature2"],
+html[lang="ko"] .finalSignature__text p[data-i18n="signature3"] {
+  font-size: clamp(39.864px, 4.2768vw, 59.928px) !important;
+}
+
+@media (max-width: 768px) {
+  html[lang="ko"] .finalSignature__text p[data-i18n="signature2"],
+  html[lang="ko"] .finalSignature__text p[data-i18n="signature3"] {
+    font-size: clamp(31.416px, 8.25vw, 42.768px) !important;
+  }
+}
+
+@media (max-width: 390px) {
+  html[lang="ko"] .finalSignature__text p[data-i18n="signature2"],
+  html[lang="ko"] .finalSignature__text p[data-i18n="signature3"] {
+    font-size: clamp(27.06px, 7.392vw, 35.64px) !important;
+  }
+}
+
+/* ===== Korean hero ampersand/lang buttons and tighter tagline spacing ===== */
+html[lang="ko"] .hero__title .groom-line em {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+html[lang="ko"] .lang,
+html[lang="ko"] .introLang {
+  font-family: Inter, system-ui, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+html[lang="ko"] .hero p.script[data-i18n="tagline"] {
+  margin-top: 12px !important;
+}
+
+@media (max-width: 768px) {
+  html[lang="ko"] .hero p.script[data-i18n="tagline"] {
+    margin-top: 10px !important;
+  }
+}
+
+/* ===== Intro language panel smaller ===== */
+.introLangs {
+  gap: 5px !important;
+  padding: 5px !important;
+}
+
+.introLang {
+  min-width: 38px !important;
+  padding: 8px 10px !important;
+  font-size: 12px !important;
+  letter-spacing: .1em !important;
+}
+
+@media (max-width: 768px) {
+  .introLangs {
+    gap: 4px !important;
+    padding: 4px !important;
+  }
+
+  .introLang {
+    min-width: 34px !important;
+    padding: 7px 8px !important;
+    font-size: 11px !important;
+  }
+}
