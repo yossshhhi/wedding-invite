@@ -15,7 +15,8 @@ function doPost(e) {
       Array.isArray(data.food) ? data.food.join(", ") : "",
       data.restrictions || "",
       data.comment || "",
-      data.createdAt || ""
+      data.createdAt || "",
+      data.partnerNameLatin || ""
     ]);
     return ContentService
       .createTextOutput(JSON.stringify({ status: "ok" }))
@@ -49,11 +50,19 @@ function getSheet() {
     "Food",
     "Restrictions",
     "Comment",
-    "Client time"
+    "Client time",
+    "Partner name (Latin)"
   ];
 
   if (sh.getLastRow() === 0) {
     sh.appendRow(headers);
+  } else {
+    const currentHeaders = sh.getRange(1, 1, 1, Math.max(sh.getLastColumn(), headers.length)).getValues()[0];
+    headers.forEach((header, index) => {
+      if (!currentHeaders[index]) {
+        sh.getRange(1, index + 1).setValue(header);
+      }
+    });
   }
 
   return sh;

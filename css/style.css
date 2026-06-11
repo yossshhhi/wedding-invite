@@ -729,6 +729,10 @@ textarea {
   resize:vertical;
 }
 
+.partnerNameField[hidden] {
+  display:none !important;
+}
+
 .choices,.checks {
   display:grid;
   grid-template-columns:1fr 1fr;

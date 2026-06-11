@@ -47,7 +47,7 @@ function applyMusicStartTime(audio, lang = currentLang) {
   }
 }
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxlosjqzt23rT8RWM0ZmAADPXVVyAwpgFh9iG7_ABNw1I5qkTM5WwzNxaKn-IyFzg-6iw/exec"; // сюда вставить URL Google Apps Script
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxYkxqY02fmoHXY5bAdeAf0Bbn1KgRn5w3fvusgiAetOJl7sWgVzmTH7O-m9FY0elrBBg/exec"; // сюда вставить URL Google Apps Script
 
 async function submitRsvpForm(data) {
   const response = await fetch(GOOGLE_SCRIPT_URL, {
@@ -290,12 +290,34 @@ function initForm() {
   const button = document.getElementById("submitBtn");
   if (!form || !status || !button) return;
 
+  const partnerNameField = form.querySelector(".partnerNameField");
+  const partnerNameInput = form.elements.partnerNameLatin;
+  const presenceInputs = Array.from(form.elements.presence || []);
+
+  function syncPartnerNameField() {
+    const hasPartner = form.elements.presence?.value === "partner";
+    if (!partnerNameField || !partnerNameInput) return;
+
+    partnerNameField.hidden = !hasPartner;
+    partnerNameInput.disabled = !hasPartner;
+    partnerNameInput.required = hasPartner;
+
+    if (!hasPartner) {
+      partnerNameInput.value = "";
+    }
+  }
+
+  presenceInputs.forEach((input) => input.addEventListener("change", syncPartnerNameField));
+  syncPartnerNameField();
+
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
+    syncPartnerNameField();
 
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
     data.food = formData.getAll("food");
+    data.partnerNameLatin = data.presence === "partner" ? (data.partnerNameLatin || "") : "";
     data.createdAt = new Date().toISOString();
 
     status.textContent = t("sending");
@@ -312,6 +334,7 @@ function initForm() {
       status.textContent = t("success");
       form.reset();
       document.getElementById("formLang").value = currentLang;
+      syncPartnerNameField();
     } catch (error) {
       console.error(error);
       status.textContent = t("error");
