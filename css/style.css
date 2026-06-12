@@ -748,6 +748,17 @@ textarea {
   gap:10px;
 }
 
+.choices .partnerNameField {
+  grid-column:2 / 3;
+  display:block;
+  padding:0;
+  border:0;
+}
+
+.choices .partnerNameField input {
+  width:100%;
+}
+
 .checks label {
   display:flex;
   align-items:center;
@@ -832,6 +843,10 @@ textarea {
 
 .formGrid,.choices,.checks {
     grid-template-columns:1fr;
+  }
+
+  .choices .partnerNameField {
+    grid-column:1 / -1;
   }
 }
 
